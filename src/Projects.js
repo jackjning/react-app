@@ -1,6 +1,9 @@
 const Projects = () => {
-    return (
-      <div> React webpage.</div>
+  return (
+    <div>
+      <h1>Projects</h1>
+      React webpage
+    </div>
   );
-}
+};
 export default Projects;
