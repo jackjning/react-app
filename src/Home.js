@@ -1,12 +1,9 @@
-import { Counter } from "./features/counter/Counter"
+import {  } from "module";
 
-const Home = (props) => {
-    console.log(props)
-    console.log("This is Jack");
+const Home = () => {
     return (
       <div>
-      <div> This is the Homepage. </div>
-      <Counter />
+      <div> This is the Homepage.</div>
       </div>
   );
 }
