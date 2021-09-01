@@ -16,6 +16,7 @@ const useStyles = makeStyles({
   },
   drawerPaper: {
     width: drawerWidth,
+    background: "white"
   },
   root: {
     display: "flex",
@@ -24,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-const App = (props) => {
+const App = () => {
   console.log("hello world");
 
   const classes = useStyles();
