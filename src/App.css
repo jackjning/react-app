@@ -28,3 +28,18 @@
   height: 50px;
   color: #fc86aa;
 }
+
+.drawer {
+  width: 150px;
+}
+
+.drawerPaper {
+  width: 150px;
+  background: "white";
+}
+
+.root {
+  display: "flex";
+  margin-left: 200px;
+  margin-right: 50px;
+}
