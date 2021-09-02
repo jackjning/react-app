@@ -1,23 +1,22 @@
 import React from "react";
+import "./App.css"
 import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <nav>
-      <ul className="nav-link" style={{ listStyleType: "none" }}>
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-          <li>Home</li>
+    <nav className="navBar">
+        <Link class="item" to="/" style={{ textDecoration: "none", color: "black" }}>
+          Home
         </Link>
-        <Link to="/About" style={{ textDecoration: "none", color: "black" }}>
-          <li>About</li>
+        <Link class="item" to="/About" style={{ textDecoration: "none", color: "black" }}>
+          About
         </Link>
-        <Link to="/Resume" style={{ textDecoration: "none", color: "black" }}>
-          <li>Resume</li>
+        <Link class="item" to="/Resume" style={{ textDecoration: "none", color: "black" }}>
+          Resume
         </Link>
-        <Link to="/Projects" style={{ textDecoration: "none", color: "black" }}>
-          <li>Projects</li>
+        <Link class="item" to="/Projects" style={{ textDecoration: "none", color: "black" }}>
+          Projects
         </Link>
-      </ul>
     </nav>
   );
 }

@@ -1,26 +1,22 @@
 import "./App.css";
 import Nav from "./Navigate";
+import Links from "./MediaLinks";
 import Routes from "./Routes";
 import { BrowserRouter as Router } from "react-router-dom";
-import Drawer from "@material-ui/core/Drawer";
 
 const App = () => {
   console.log("hello world");
 
   return (
     <Router>
-      <div className="root">
-        <Drawer
-          className="drawer"
-          variant="permanent"
-          anchor="left"
-          classes={{ paper: "drawerPaper" }}
-        >
-          <div>
-            <Nav />
-          </div>
-        </Drawer>
-        <Routes />
+      <div className="bigContainer">
+        <div className="smallContainer"/>
+        <div className="root">
+          <Nav />
+          <Routes />
+          <Links/>
+        </div>
+        <div className="smallContainer"/>
       </div>
     </Router>
   );

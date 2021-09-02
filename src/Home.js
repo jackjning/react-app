@@ -1,8 +1,8 @@
 import {} from "module";
+import "./App.css";
 
 const Home = () => {
   return (
-    //<div className="header">Header</div>
     <div>
       <h1>Homepage</h1>
       <div> This is the Homepage.</div>

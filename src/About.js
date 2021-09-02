@@ -5,7 +5,7 @@ const About = (props) => {
   console.log("This is Jack");
   return (
     <div>
-      <h1>About Me</h1>
+      <h1 className="center">About Me</h1>
       <img alt="Me in Alaska" className="photo" src={JackImage} />
       <div>
         Hello! I'm Jack Ning. I graduated from the University of Virginia double
