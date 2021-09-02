@@ -1,60 +1,22 @@
 import "./App.css";
-import Home from "./Home";
-import About from "./About";
-import Resume from "./Resume";
-import Projects from "./Projects";
 import Nav from "./Navigate";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Drawer from "@material-ui/core/Drawer";
-import { makeStyles } from "@material-ui/core/styles";
+import Links from "./MediaLinks";
+import Routes from "./routes";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const drawerWidth = 150;
-
-const useStyles = makeStyles({
-  drawer: {
-    width: drawerWidth,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  root: {
-    display: "flex",
-    marginLeft: "50px",
-    marginRight: "50px",
-  },
-});
-
-const App = (props) => {
+const App = () => {
   console.log("hello world");
 
-  const classes = useStyles();
   return (
     <Router>
-      <div className={classes.root}>
-        <Drawer
-          className={classes.drawer}
-          variant="permanent"
-          anchor="left"
-          classes={{ paper: classes.drawerPaper }}
-        >
-          <div>
-            <Nav />
-          </div>
-        </Drawer>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/About">
-            <About />
-          </Route>
-          <Route path="/Resume">
-            <Resume />
-          </Route>
-          <Route path="/Projects">
-            <Projects />
-          </Route>
-        </Switch>
+      <div className="bigContainer">
+        <div className="smallContainer"/>
+        <div className="root">
+          <Nav />
+          <Routes />
+          <Links/>
+        </div>
+        <div className="smallContainer"/>
       </div>
     </Router>
   );
