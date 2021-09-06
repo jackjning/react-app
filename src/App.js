@@ -2,7 +2,7 @@ import "./App.css";
 import Nav from "./Navigate";
 import Links from "./MediaLinks";
 import Routes from "./routes";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 const App = () => {
   console.log("hello world");
