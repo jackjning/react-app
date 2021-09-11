@@ -2,12 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
 
-const StyledLink = styled(Link)`
-  color: black;
-  text-decoration: none;
-  margin: 5px;
-`;
-
 function Nav() {
   return (
     <nav className="navBar">
@@ -28,3 +22,9 @@ function Nav() {
 }
 
 export default Nav;
+
+const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+`;

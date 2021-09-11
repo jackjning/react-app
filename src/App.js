@@ -1,33 +1,32 @@
-import "./App.css";
+import styled from "@emotion/styled";
 import Nav from "./Navigate";
 import Links from "./MediaLinks";
 import Routes from "./routes";
 import { HashRouter as Router } from "react-router-dom";
-import styled from "@emotion/styled";
-
-const bigContainer = styled.div`
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-`;
 
 const App = () => {
-  console.log("hello world");
-
   return (
     <Router>
-      <bigContainer>
-        <div className="smallContainer"/>
-        <div className="root">
+      <Box>
+        <Fill>
           <Nav />
           <Routes />
           <Links/>
-        </div>
-        <div className="smallContainer"/>
-      </bigContainer>
+        </Fill>
+      </Box>
     </Router>
   );
 };
 
 export default App;
+
+const Box= styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const Fill = styled.div ({
+  width: '700px',
+  margin: '10px',
+});
+
