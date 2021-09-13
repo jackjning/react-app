@@ -5,18 +5,10 @@ import styled from "@emotion/styled";
 function Nav() {
   return (
     <nav className="navBar">
-        <StyledLink to="/">
-          Home
-        </StyledLink>
-        <StyledLink to="/About">
-          About
-        </StyledLink>
-        <StyledLink to="/Resume">
-          Resume
-        </StyledLink>
-        <StyledLink to="/Projects">
-          Projects
-        </StyledLink>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/About">About</StyledLink>
+      <StyledLink to="/Resume">Resume</StyledLink>
+      <StyledLink to="/Projects">Projects</StyledLink>
     </nav>
   );
 }

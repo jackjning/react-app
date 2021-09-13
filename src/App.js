@@ -11,7 +11,7 @@ const App = () => {
         <Fill>
           <Nav />
           <Routes />
-          <Links/>
+          <Links />
         </Fill>
       </Box>
     </Router>
@@ -20,13 +20,13 @@ const App = () => {
 
 export default App;
 
-const Box= styled.div`
+const Box = styled.div`
   display: flex;
   justify-content: center;
-`
+  font-family: Arial;
+`;
 
-const Fill = styled.div ({
-  width: '700px',
-  margin: '10px',
+const Fill = styled.div({
+  width: "700px",
+  margin: "10px",
 });
-
