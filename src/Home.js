@@ -1,5 +1,4 @@
 import {} from "module";
-import "./App.css";
 
 const Home = () => {
   return (

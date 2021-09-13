@@ -1,24 +1,22 @@
 import React from "react";
-import "./App.css"
 import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
 
 function Nav() {
   return (
     <nav className="navBar">
-        <Link class="item" to="/" style={{ textDecoration: "none", color: "black" }}>
-          Home
-        </Link>
-        <Link class="item" to="/About" style={{ textDecoration: "none", color: "black" }}>
-          About
-        </Link>
-        <Link class="item" to="/Resume" style={{ textDecoration: "none", color: "black" }}>
-          Resume
-        </Link>
-        <Link class="item" to="/Projects" style={{ textDecoration: "none", color: "black" }}>
-          Projects
-        </Link>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/About">About</StyledLink>
+      <StyledLink to="/Resume">Resume</StyledLink>
+      <StyledLink to="/Projects">Projects</StyledLink>
     </nav>
   );
 }
 
 export default Nav;
+
+const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+`;

@@ -1,19 +1,21 @@
-import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
 
 const Resume = () => {
   return (
-    <div>
+    <Links>
       <h1>Resume</h1>
-      <Link
-        to="JackNingResume.pdf"
-        target="_blank"
-        download
-        style={{ textDecoration: "none" }}
-      >
-        Download
-      </Link>
-    </div>
+      <a href="/JackNingResume.pdf" download>
+        Click here to Download
+      </a>
+    </Links>
   );
 };
 
 export default Resume;
+
+const Links = styled.div`
+  a {
+    text-decoration: none;
+    color: black;
+  }
+`;
